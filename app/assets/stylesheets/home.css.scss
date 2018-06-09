@@ -45,7 +45,7 @@ nav {
   }
 
   &.sticky + .content {
-    padding-top: 60px;
+    padding-top: 50px;
   }
 
   a {
@@ -58,10 +58,6 @@ nav {
 
 .section-header {
   font-size: 25px;
-
-  &:before {
-
-  }
 }
 
 .section {
