@@ -90,9 +90,9 @@ nav {
   .border {
     border: 10px solid transparent;
     padding: 15px;
-    border-image: asset-url("border.svg") 10 round;
-    -webkit-border-image: asset-url("border.svg") 10 round; /* Safari 3.1-5 */
-    -o-border-image: asset-url("border.svg") 10 round; /* Opera 11-12.1 */
+    border-image: asset-url("border.svg") 30 round;
+    -webkit-border-image: asset-url("border.svg") 30 round; /* Safari 3.1-5 */
+    -o-border-image: asset-url("border.svg") 30 round; /* Opera 11-12.1 */
   }
 }
 
