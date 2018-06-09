@@ -14,3 +14,18 @@ $ ->
       'scrollTop': $target.offset().top
     }, 500, 'swing', ->
       window.location.hash = target
+
+
+  setSticky = ->
+    if window.pageYOffset >= sticky
+      navbar.classList.add 'sticky'
+    else
+      navbar.classList.remove 'sticky'
+    return
+
+  window.onscroll = ->
+    setSticky()
+    return
+
+  navbar = document.getElementById('navbar')
+  sticky = navbar.offsetTop

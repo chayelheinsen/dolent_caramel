@@ -35,6 +35,18 @@ nav {
   justify-content: center;
   height: 50px;
   line-height: 50px;
+  overflow: hidden;
+  z-index: 1000;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  &.sticky + .content {
+    padding-top: 60px;
+  }
 
   a {
     color: #FFFFFF;
