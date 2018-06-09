@@ -1,0 +1,102 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  font-family: "Lato", "Avenir Next", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url("background.svg");
+  height: 200px;
+  background-repeat: no-repeat;
+
+  .logo {
+    background-image: url("logo.png");
+    height: 175px;
+    width: 115px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+  }
+}
+
+nav {
+  background-color: #4A90E2;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  line-height: 50px;
+
+  a {
+    color: #FFFFFF;
+    line-height: 50px;
+    padding: 0 40px;
+    font-size: 14px;
+  }
+}
+
+.section-header {
+  font-size: 25px;
+
+  &:before {
+
+  }
+}
+
+.section {
+  margin: 10px 30px;
+}
+
+.section-header {
+  line-height: 0.5;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid black;
+      top: 0;
+      width: 200px;
+    }
+
+    &:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+  }
+}
+
+.packages {
+  .border {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("border.svg") 10 round;
+    -webkit-border-image: url("border.svg") 10 round; /* Safari 3.1-5 */
+    -o-border-image: url("border.svg") 10 round; /* Opera 11-12.1 */
+  }
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+}
