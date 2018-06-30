@@ -29,6 +29,14 @@ a {
   }
 }
 
+.company-name {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 auto 10px;
+  font-weight: 300;
+  color: #4A90E2;
+}
+
 nav {
   background-color: #4A90E2;
   display: flex;
@@ -71,14 +79,19 @@ nav {
   span {
     display: inline-block;
     position: relative;
-    font-size: 25px;
+    font-size: 45px;
+    font-family: "Shadows Into Light";
+    color: #ff00ad;
 
     &:before, &:after {
       content: "";
       position: absolute;
-      height: 5px;
-      border-bottom: 1px solid black;
-      top: 0;
+      // height: 5px;
+      border-bottom: 30px solid transparent;
+      border-image: asset-url("border.svg") 30 round;
+      -webkit-border-image: asset-url("border.svg") 30 round; /* Safari 3.1-5 */
+      -o-border-image: asset-url("border.svg") 30 round; /* Opera 11-12.1 */
+      top: -10px;
       width: 200px;
     }
 
@@ -94,9 +107,17 @@ nav {
   }
 }
 
+.services {
+  color: #9370db;
+
+  .services-info {
+    margin: 0 100px;
+  }
+}
+
 .packages {
   .border {
-    border: 10px solid transparent;
+    border: 30px solid transparent;
     padding: 15px;
     border-image: asset-url("border.svg") 30 round;
     -webkit-border-image: asset-url("border.svg") 30 round; /* Safari 3.1-5 */
@@ -104,7 +125,53 @@ nav {
   }
 }
 
+.package-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  font-weight: 300;
+  color: #4A90E2;
+  font-family: "Shadows Into Light";
+}
+
+.package-subtitle {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto 10px;
+  font-weight: 300;
+  color: #4A90E2;
+}
+
+.package-info {
+  margin: 0 15px;
+  color: #9370db;
+}
+
 .column {
   display: flex;
   justify-content: center;
+}
+
+.contact-section {
+  form {
+    text-align: center;
+  }
+  
+  input {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 25px;
+  }
+
+  .submit {
+
+  }
+
+  textarea {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 50px;
+  }
 }
