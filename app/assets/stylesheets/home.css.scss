@@ -187,3 +187,46 @@ nav {
     font-size: 16px;
   }
 }
+
+.flash-messages {
+  position: absolute;
+  z-index: 10000;
+  left: 20px;
+  right: 20px;
+  top: 70px;
+}
+
+.flash-message {
+  position: relative;
+  padding: 15px 20px;
+  margin: 10px 100px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.flash-message.nonclosable .flash-message-close {
+  display: none;
+}
+
+.flash-message-close {
+  float: right;
+  cursor: pointer;
+}
+
+.flash-message.success {
+  background-color: #4A90E2;
+}
+
+.flash-message.notice, .flash-message.info {
+  background-color: #77C3E8;
+}
+
+.flash-message.error, .flash-message.danger {
+  background-color: #dd5749;
+}
+
+.flash-message.warning, .flash-message.alert {
+  background-color: #FF9800;
+}

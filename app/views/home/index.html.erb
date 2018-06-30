@@ -12,6 +12,11 @@
 </nav>
 
 <div class="content">
+
+  <% flash.each do |key, value| %>
+    <div class="flash-message <%= key %>"><%= value %></div>
+  <% end %>
+
   <div id="services" class="services section">
     <p class="section-header"><span>Services</span></p>
 

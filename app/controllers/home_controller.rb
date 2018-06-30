@@ -5,6 +5,8 @@ class HomeController < ApplicationController
 
   def contact
     ContactMailer.contact(contact_params).deliver
+    flash[:success] = "Message Sent!"
+    redirect_to home_index_url
   end
 
   private
