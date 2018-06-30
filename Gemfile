@@ -30,9 +30,9 @@ group :development, :test do
 end
 
 group :development do
-  gem "letter_opener"
   gem "annotate"
   gem "better_errors"
+  gem "letter_opener"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "rubocop"
   gem "spring"

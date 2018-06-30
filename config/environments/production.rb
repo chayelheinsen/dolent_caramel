@@ -66,7 +66,17 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "dolent_caramel_#{Rails.env}"
 
+  config.action_mailer.default_url_options = { host: ENV["MAIL_HOST"] }
   config.action_mailer.perform_caching = false
+  config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    authentication: "plain",
+    address: ENV["MAIL_ADDRESS"],
+    port: ENV["MAIL_PORT"] || 587,
+    domain: ENV["MAIL_DOMAIN"],
+    user_name: ENV["MAIL_USERNAME"],
+    password: ENV["MAIL_PASSWORD"],
+  }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

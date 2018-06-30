@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   def index; end
 
   def contact
-
+    ContactMailer.contact(contact_params).deliver
   end
 
   private
