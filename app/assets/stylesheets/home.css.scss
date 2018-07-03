@@ -67,6 +67,11 @@ nav {
 
 .section-header {
   font-size: 25px;
+  height: 100px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
 }
 
 .section {
@@ -76,43 +81,44 @@ nav {
 .section-header {
   line-height: 0.5;
   text-align: center;
+}
 
-  span {
-    display: inline-block;
-    position: relative;
-    font-size: 45px;
-    font-family: "Shadows Into Light";
-    color: #ff00ad;
+.trails {
+  display: inline-block;
+  position: relative;
 
-    &:before, &:after {
-      content: "";
-      position: absolute;
-      // height: 5px;
-      border-top: 0 solid transparent;
-      border-right: 0 solid transparent;
-      border-left: 0 solid transparent;
-      border-bottom: 30px solid transparent;
-      border-image: asset-url("border.svg") 30 round;
-      -webkit-border-image: asset-url("border.svg") 30 round; /* Safari 3.1-5 */
-      -o-border-image: asset-url("border.svg") 30 round; /* Opera 11-12.1 */
-      top: -10px;
-      width: 200px;
-    }
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    // height: 5px;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-bottom: 30px solid transparent;
+    border-image: asset-url("border.svg") 30 round;
+    -webkit-border-image: asset-url("border.svg") 30 round; /* Safari 3.1-5 */
+    -o-border-image: asset-url("border.svg") 30 round; /* Opera 11-12.1 */
+    // top: -10px;
+    width: 200px;
+  }
 
-    &:before {
-      right: 100%;
-      margin-right: 15px;
-    }
+  &:before {
+    // right: 100%;
+    margin-right: 15px;
+  }
 
-    &:after {
-      left: 100%;
-      margin-left: 15px;
-    }
+  &:after {
+    // left: 100%;
+    margin-left: 15px;
   }
 }
 
 .services {
   color: #9370db;
+
+  .section-header {
+    background-image: asset_url("services.svg");
+  }
 
   .services-info {
     margin: 0 100px;
@@ -120,6 +126,10 @@ nav {
 }
 
 .packages {
+  .section-header {
+    background-image: asset_url("packages.svg");
+  }
+
   .border {
     background-color: #fffaf0;
     margin: 15px 100px;
@@ -159,6 +169,10 @@ nav {
 }
 
 .gallery {
+  .section-header {
+    background-image: asset_url("gallery.svg");
+  }
+
   div.column {
     div {
       height: 200px;
@@ -183,6 +197,18 @@ nav {
         background-image: asset-url("pixar_cake.jpg");
       }
     }
+  }
+}
+
+.our-story {
+  .section-header {
+    background-image: asset_url("our_story.svg");
+  }
+}
+
+.contact_us {
+  .section-header {
+    background-image: asset_url("contact_us.svg");
   }
 }
 
