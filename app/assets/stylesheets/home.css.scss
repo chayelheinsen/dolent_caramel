@@ -96,6 +96,9 @@ nav {
       content: "";
       position: absolute;
       // height: 5px;
+      border-top: 0 solid transparent;
+      border-right: 0 solid transparent;
+      border-left: 0 solid transparent;
       border-bottom: 30px solid transparent;
       border-image: asset-url("border.svg") 30 round;
       -webkit-border-image: asset-url("border.svg") 30 round; /* Safari 3.1-5 */
