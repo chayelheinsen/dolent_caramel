@@ -17,7 +17,8 @@ a {
 .header {
   background-image: asset-url("background.svg");
   height: 300px;
-  // background-repeat-y: no-repeat;
+  background-size: cover;
+  ackground-repeat-y: no-repeat;
 
   .logo {
     background-image: asset-url("logo.png");
