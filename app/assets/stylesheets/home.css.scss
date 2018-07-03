@@ -177,6 +177,8 @@ nav {
     font-size: 30px;
     height: 50px;
     border: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 
     &:hover {
       background-color: #4A90FF;
