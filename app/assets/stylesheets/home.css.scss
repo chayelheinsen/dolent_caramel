@@ -16,17 +16,25 @@ a {
 
 .header {
   background-image: asset-url("background.svg");
-  height: 200px;
-  background-repeat-y: no-repeat;
+  height: 300px;
+  // background-repeat-y: no-repeat;
 
   .logo {
     background-image: asset-url("logo.png");
-    height: 175px;
-    width: 115px;
+    height: 300px;
+    width: 250px;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;
   }
+}
+
+.orlando {
+  background-image: asset-url("orlando.png");
+  height: 300px;
+  background-repeat-y: no-repeat;
+  background-size: contain;
+  margin-top: 15px;
 }
 
 .company-name {
@@ -117,7 +125,8 @@ nav {
 
 .packages {
   .border {
-    border: 30px solid transparent;
+    margin: 15px 30px;
+    border: 50px solid transparent;
     padding: 15px;
     border-image: asset-url("border.svg") 30 round;
     -webkit-border-image: asset-url("border.svg") 30 round; /* Safari 3.1-5 */
@@ -229,4 +238,17 @@ nav {
 
 .flash-message.warning, .flash-message.alert {
   background-color: #FF9800;
+}
+
+footer {
+  background-color: #4A90E2;
+  height: 60px;
+
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    margin: auto;
+  }
 }
