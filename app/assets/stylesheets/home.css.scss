@@ -30,14 +30,6 @@ a {
   }
 }
 
-.orlando {
-  background-image: asset-url("orlando.png");
-  height: 300px;
-  background-repeat-y: no-repeat;
-  background-size: contain;
-  margin-top: 15px;
-}
-
 .company-name {
   text-align: center;
   font-size: 50px;
@@ -129,7 +121,7 @@ nav {
 
 .packages {
   .border {
-    margin: 15px 30px;
+    margin: 15px 100px;
     border: 50px solid transparent;
     padding: 15px;
     border-image: asset-url("border.svg") 30 round;
@@ -242,6 +234,15 @@ nav {
 
 .flash-message.warning, .flash-message.alert {
   background-color: #FF9800;
+}
+
+.orlando {
+  background-image: asset-url("orlando.png");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
 }
 
 footer {
