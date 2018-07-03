@@ -201,8 +201,22 @@ nav {
 }
 
 .our-story {
+  color: #9370db;
+  margin: 0 100px;
+
   .section-header {
     background-image: asset_url("our_story.svg");
+  }
+
+  .text-container .story-image {
+    width: 130px;
+    height: 200px;
+    float: right;
+    padding: 25px;
+    background-image: asset_url('our_story_image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 16px 25px;
   }
 }
 
