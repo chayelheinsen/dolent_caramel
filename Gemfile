@@ -15,6 +15,7 @@ gem "rails", "~> 5.2.0"
 gem "sass-rails", "~> 5.0"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
+gem "recaptcha"
 
 group :development, :test do
   gem "binding_of_caller"
@@ -38,6 +39,7 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
+  gem "rb-readline"
 end
 
 group :test do

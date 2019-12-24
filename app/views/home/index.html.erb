@@ -247,6 +247,7 @@
           <%= f.text_field(:email, placeholder: "Email") %>
           <%= f.text_area(:message, placeholder: "Message") %>
           <%= f.submit("Contact Us", class: "submit") %>
+          <%= recaptcha_v3(action: "contact") %>
         <% end %>
       </div>
     </div>
